@@ -1,4 +1,4 @@
-// ...existing code...
+
 function PokemonCard({ id, name, type, imageUrl }) {
   return (
     <div>
@@ -10,4 +10,3 @@ function PokemonCard({ id, name, type, imageUrl }) {
 }
 
 export default PokemonCard
-// ...existing code...
