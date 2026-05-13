@@ -14,7 +14,20 @@ const POKEMONS = [
     name: 'Bulbasaur',
     type: 'Grama / Veneno',
     imageUrl: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png'
+  },
+  {
+    id: 4,
+    name: 'Charmander',
+    type: 'Fogo',
+    imageUrl: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png'
+  },
+  {
+    id: 7,
+    name: 'Squirtle',
+    type: 'Água',
+    imageUrl: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png'
   }
+
 ]
 
 function PokemonList() {
