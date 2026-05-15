@@ -61,7 +61,7 @@ function PokemonList() {
       margin: '0 auto',
       backgroundColor: '#fafaf9'
     }}>
-      {/* Campo de busca e contador */}
+
       <div style={{
         marginBottom: '2rem',
         display: 'flex',
@@ -97,7 +97,6 @@ function PokemonList() {
           />
         </div>
 
-        {/* MENSAGEM DINÂMICA DO CONTADOR */}
         <div style={{
           fontSize: '0.875rem',
           color: '#6b7280',
@@ -110,7 +109,6 @@ function PokemonList() {
         </div>
       </div>
 
-      {/* LISTA DE POKÉMONS OU MENSAGEM DE NÃO ENCONTRADO */}
       {listaFiltrada.length > 0 ? (
         <div style={{
           display: 'grid',
@@ -128,7 +126,7 @@ function PokemonList() {
           ))}
         </div>
       ) : (
-        /* MENSAGEM QUANDO NÃO ENCONTRA NENHUM POKÉMON */
+
         <div style={{
           textAlign: 'center',
           padding: '3rem',
@@ -140,7 +138,6 @@ function PokemonList() {
             fontSize: '3rem',
             marginBottom: '1rem'
           }}>
-            🔍
           </div>
           <h3 style={{
             color: '#1f2937',
