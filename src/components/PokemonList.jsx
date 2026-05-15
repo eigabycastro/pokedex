@@ -20,6 +20,30 @@ const POKEMONS = [
     type: 'Água',
     imageUrl: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png'
   },
+  {
+    id: 4,
+    name: 'Charmander',
+    type: 'Fogo',
+    imageUrl: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png'
+  },
+  {
+    id: 237,
+    name: 'Hitmontop',
+    type: 'Normal',
+    imageUrl: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/237.png'
+  },
+  {
+    id: 143,
+    name: 'Snorlax',
+    type: 'Normal',
+    imageUrl: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png'
+  },
+  {
+    id: 150,
+    name: 'Mewtwo',
+    type: 'Psíquico',
+    imageUrl: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png'
+  }
 ]
 
 function PokemonList() {
@@ -37,7 +61,7 @@ function PokemonList() {
       margin: '0 auto',
       backgroundColor: '#fafaf9'
     }}>
-
+      {/* Campo de busca e contador */}
       <div style={{
         marginBottom: '2rem',
         display: 'flex',
@@ -73,6 +97,7 @@ function PokemonList() {
           />
         </div>
 
+        {/* MENSAGEM DINÂMICA DO CONTADOR */}
         <div style={{
           fontSize: '0.875rem',
           color: '#6b7280',
@@ -85,7 +110,7 @@ function PokemonList() {
         </div>
       </div>
 
-
+      {/* LISTA DE POKÉMONS OU MENSAGEM DE NÃO ENCONTRADO */}
       {listaFiltrada.length > 0 ? (
         <div style={{
           display: 'grid',
@@ -103,7 +128,7 @@ function PokemonList() {
           ))}
         </div>
       ) : (
-
+        /* MENSAGEM QUANDO NÃO ENCONTRA NENHUM POKÉMON */
         <div style={{
           textAlign: 'center',
           padding: '3rem',
@@ -115,7 +140,7 @@ function PokemonList() {
             fontSize: '3rem',
             marginBottom: '1rem'
           }}>
-            
+            🔍
           </div>
           <h3 style={{
             color: '#1f2937',
