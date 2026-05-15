@@ -5,10 +5,17 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div>
+    <div style={{
+      backgroundColor: '#fafaf9',
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column'
+    }}>
       <Header />
       <Navbar />
-      <PokemonList />
+      <main style={{ flex: 1 }}>
+        <PokemonList />
+      </main>
       <Footer />
     </div>
   )
